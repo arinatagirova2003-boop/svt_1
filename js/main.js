@@ -1,3 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('Лабораторна робота №2: HTML Basics');
+document.addEventListener("DOMContentLoaded", function () {
+  const yearEl = document.getElementById("year");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+  console.log("Сайт інституту завантажено успішно");
 });

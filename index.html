@@ -3,119 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Навчальний багатосторінковий сайт для лабораторної роботи №2 з основ HTML.">
-  <title>Інститут КМПФМ | Головна</title>
+  <meta name="description" content="Інститут комп'ютерного моделювання, прикладної фізики та математики НТУ ХПІ">
+  <title>Головна — Інститут комп'ютерного моделювання</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="top-line">
-      <img src="images/logo.svg" alt="Логотип НТУ ХПІ" width="80" height="80">
-      <div>
-        <p class="eyebrow">НТУ «ХПІ»</p>
-        <h1>Інститут комп’ютерного моделювання, прикладної фізики та математики</h1>
-      </div>
+    <div class="container">
+      <img src="img/logo.png" alt="Логотип НТУ ХПІ" class="logo" width="60" height="60">
+      <h1>Інститут комп'ютерного моделювання, прикладної фізики та математики</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="pages/about.html">Кафедра</a></li>
+          <li><a href="pages/contact.html">Контакти</a></li>
+          <li><a href="https://www.kpi.kharkov.ua/ukr/" target="_blank" rel="noopener">Сайт НТУ «ХПІ»</a></li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="main-nav" aria-label="Головна навігація">
-      <ul>
-        <li><a href="index.html">Головна</a></li>
-        <li><a href="pages/department.html">Кафедра</a></li>
-        <li><a href="pages/contacts.html">Контакти</a></li>
-        <li><a href="pages/emmet.html">Emmet</a></li>
-        <li><a href="https://www.kpi.kharkov.ua/ukr/faculty/i/" target="_blank">Сайт інституту</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main>
+  <main class="container">
     <section class="hero">
-      <div class="hero-text">
-        <h2>Освіта, дослідження та сучасні інформаційні технології</h2>
-        <p>
-          Інститут об’єднує напрями, пов’язані з <strong>комп’ютерним моделюванням</strong>,
-          прикладною математикою, фізикою та розробкою програмних систем.
-        </p>
-        <p>
-          Цей навчальний сайт створено для демонстрації структури HTML-документа,
-          навігації між сторінками та використання основних тегів HTML.
-        </p>
-      </div>
-      <img src="images/institute-building.svg" alt="Схематичне зображення будівлі інституту" width="420" height="260">
+      <img src="img/banner.jpg" alt="Будівля НТУ ХПІ" class="banner">
+      <h2>Про інститут</h2>
+      <p>
+        <strong>Інститут комп'ютерного моделювання, прикладної фізики та математики</strong>
+        є одним з провідних навчально-наукових підрозділів
+        <em>Національного технічного університету «Харківський політехнічний інститут»</em>.
+        Інститут здійснює підготовку фахівців у галузі комп'ютерних наук,
+        прикладної математики та інформаційних технологій.
+      </p>
     </section>
 
-    <div class="content-layout">
-      <article>
-        <h2>Про інститут</h2>
-        <p>
-          Основною метою інституту є підготовка фахівців, які здатні працювати з
-          математичними моделями, інформаційними системами та сучасними технологіями
-          розробки програмного забезпечення.
-        </p>
-        <p>
-          Навчання включає дисципліни з програмування, алгоритмів, web-технологій,
-          комп’ютерного моделювання та аналізу даних.
-        </p>
-      </article>
-
-      <aside>
-        <h2>Корисна інформація</h2>
-        <ul>
-          <li>Освітні програми</li>
-          <li>Кафедри інституту</li>
-          <li>Наукова робота</li>
-          <li>Студентські проєкти</li>
-        </ul>
-      </aside>
-    </div>
+    <hr>
 
     <section class="news">
-      <h2>Новини інституту</h2>
-      <ul>
-        <li>
-          <strong>Відкрита реєстрація на студентську конференцію.</strong><br>
-          Учасники можуть представити власні проєкти з програмування та моделювання.
-        </li>
-        <li>
-          <strong>Оновлено навчальні матеріали з web-технологій.</strong><br>
-          Додано приклади роботи з HTML5, CSS та JavaScript.
-        </li>
-        <li>
-          <strong>Проведено зустріч з представниками IT-компаній.</strong><br>
-          Студенти дізналися про вимоги до junior frontend-розробників.
-        </li>
-      </ul>
+      <h2>Новини</h2>
+      <article class="news-item">
+        <h3>Початок нового навчального семестру</h3>
+        <p>Запрошуємо студентів на оновлені курси з frontend-розробки та веб-технологій.</p>
+      </article>
+      <article class="news-item">
+        <h3>Студентська наукова конференція</h3>
+        <p>Триває реєстрація доповідей для щорічної конференції молодих науковців.</p>
+      </article>
     </section>
 
+    <hr>
+
     <section class="gallery">
-      <h2>Галерея зображень</h2>
-      <p>
-        У цьому розділі виконано завдання варіанту 2: додано мінімум три різні
-        зображення з атрибутами <code>alt</code>.
-      </p>
+      <h2>Галерея</h2>
+      <p>Фотогалерея навчального процесу та життя інституту.</p>
       <div class="gallery-grid">
         <figure>
-          <img src="images/gallery-1.svg" alt="Аудиторія для занять з програмування" width="260" height="170">
-          <figcaption>Навчальна аудиторія</figcaption>
+          <img src="img/gallery-1.jpg" alt="Аудиторія під час лекції">
+          <figcaption>Лекційна аудиторія</figcaption>
         </figure>
         <figure>
-          <img src="images/gallery-2.svg" alt="Лабораторія комп’ютерного моделювання" width="260" height="170">
-          <figcaption>Лабораторія моделювання</figcaption>
+          <img src="img/gallery-2.jpg" alt="Студенти у комп'ютерній лабораторії">
+          <figcaption>Комп'ютерна лабораторія</figcaption>
         </figure>
         <figure>
-          <img src="images/gallery-3.svg" alt="Студентський web-проєкт на екрані ноутбука" width="260" height="170">
-          <figcaption>Студентський проєкт</figcaption>
+          <img src="img/gallery-3.jpg" alt="Головний корпус університету">
+          <figcaption>Головний корпус</figcaption>
         </figure>
       </div>
     </section>
+
+    <aside class="info">
+      <h2>Корисна інформація</h2>
+      <ul>
+        <li>Денна та заочна форми навчання</li>
+        <li>Сучасні комп'ютерні лабораторії</li>
+        <li>Співпраця з IT-компаніями</li>
+      </ul>
+    </aside>
   </main>
 
-  <footer>
-    <address>
-      НТУ «ХПІ», м. Харків<br>
-      Email: <a href="mailto:info@example.edu.ua">info@example.edu.ua</a>
-    </address>
-    <p>&copy; 2026 Навчальний сайт для лабораторної роботи №2.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <address>
+        вул. Кирпичова, 2, м. Харків, Україна<br>
+        Тел: <a href="tel:+380577076000">+38 (057) 707-60-00</a><br>
+        Email: <a href="mailto:info@kpi.kharkov.ua">info@kpi.kharkov.ua</a>
+      </address>
+      <p>&copy; <span id="year">2026</span> Інститут комп'ютерного моделювання. Усі права захищені.</p>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
