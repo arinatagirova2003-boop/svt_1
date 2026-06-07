@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог — Інститут комп'ютерного моделювання</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img src="../img/logo.png" alt="Логотип НТУ ХПІ" class="logo" width="60" height="60">
+      <h1>Блог інституту</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="about.html">Кафедра</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+          <li><a href="https://www.kpi.kharkov.ua/ukr/" target="_blank" rel="noopener">Сайт НТУ «ХПІ»</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container blog-layout">
+    <main>
+      <h2>Статті блогу</h2>
+
+      <article class="blog-post">
+        <header>
+          <h3>Як побудоване навчання на кафедрі</h3>
+          <p class="meta">
+            <time datetime="2026-05-12">12 травня 2026</time> ·
+            категорія: <a href="#navchannia">Навчання</a>
+          </p>
+        </header>
+        <figure>
+          <img src="../img/gallery-1.jpg" alt="Лекційна аудиторія інституту">
+          <figcaption>Рисунок — лекційна аудиторія інституту</figcaption>
+        </figure>
+        <p>
+          Навчальний процес на кафедрі поєднує <mark>фундаментальну теоретичну підготовку</mark>
+          з практичними лабораторними роботами. Студенти опановують математичне моделювання,
+          програмування та сучасні інформаційні технології, працюючи над реальними проєктами.
+        </p>
+      </article>
+
+      <article class="blog-post">
+        <header>
+          <h3>Наукова робота студентів інституту</h3>
+          <p class="meta">
+            <time datetime="2026-05-05">5 травня 2026</time> ·
+            категорія: <a href="#nauka">Наука</a>
+          </p>
+        </header>
+        <figure>
+          <img src="../img/gallery-2.jpg" alt="Студенти у комп'ютерній лабораторії">
+          <figcaption>Рисунок — робота в комп'ютерній лабораторії</figcaption>
+        </figure>
+        <p>
+          Студенти беруть участь у щорічних наукових конференціях, публікують тези доповідей
+          та працюють під керівництвом викладачів над дослідницькими проєктами у галузі
+          прикладної математики й комп'ютерного моделювання.
+        </p>
+      </article>
+
+      <article class="blog-post">
+        <header>
+          <h3>Курс «Сучасні Web-технології»</h3>
+          <p class="meta">
+            <time datetime="2026-04-28">28 квітня 2026</time> ·
+            категорія: <a href="#navchannia">Навчання</a>
+          </p>
+        </header>
+        <figure>
+          <img src="../img/gallery-3.jpg" alt="Головний корпус університету">
+          <figcaption>Рисунок — головний корпус НТУ «ХПІ»</figcaption>
+        </figure>
+        <p>
+          У межах курсу студенти створюють власні веб-сайти, опановуючи HTML, CSS та JavaScript.
+          Окрему увагу приділено <mark>семантичній верстці</mark> — підходу, що покращує
+          доступність і пошукову оптимізацію сторінок.
+        </p>
+        <details>
+          <summary>Приклад навчального завдання</summary>
+          <p>Одне з перших завдань — описати структуру сторінки семантичними тегами:</p>
+          <pre><code>&lt;header&gt; ... &lt;/header&gt;
+&lt;main&gt; ... &lt;/main&gt;
+&lt;footer&gt; ... &lt;/footer&gt;</code></pre>
+        </details>
+      </article>
+    </main>
+
+    <aside class="categories">
+      <h2>Категорії</h2>
+      <nav>
+        <ul>
+          <li><a href="#navchannia">Навчання</a></li>
+          <li><a href="#nauka">Наука</a></li>
+          <li><a href="#zhyttia">Студентське життя</a></li>
+          <li><a href="#podii">Події інституту</a></li>
+        </ul>
+      </nav>
+
+      <h2>Популярні статті</h2>
+      <ul>
+        <li><a href="#">Як побудоване навчання на кафедрі</a></li>
+        <li><a href="#">Наукова робота студентів інституту</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Блог Інституту комп'ютерного моделювання НТУ «ХПІ». Матеріали призначені для навчальних цілей.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
