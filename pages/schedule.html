@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Розклад — Інститут комп'ютерного моделювання</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img src="../img/logo.png" alt="Логотип НТУ ХПІ" class="logo" width="60" height="60">
+      <h1>Розклад занять</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="about.html">Кафедра</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Розклад</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+          <li><a href="https://www.kpi.kharkov.ua/ukr/" target="_blank" rel="noopener">Сайт НТУ «ХПІ»</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Розклад занять групи ІКМ-224а</h2>
+      <p>Семантична таблиця з об'єднанням комірок (<code>colspan</code>, <code>rowspan</code>) та атрибутами доступності <code>scope</code>.</p>
+
+      <table class="data-table schedule">
+        <caption>Розклад занять на І семестр</caption>
+        <thead>
+          <tr>
+            <th scope="col">Час</th>
+            <th scope="col">Понеділок</th>
+            <th scope="col">Вівторок</th>
+            <th scope="col">Середа</th>
+            <th scope="col">Четвер</th>
+            <th scope="col">П'ятниця</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">08:30 – 10:05</th>
+            <td>Вища математика</td>
+            <td>Фізика</td>
+            <td>Програмування</td>
+            <td>Англійська мова</td>
+            <td>Бази даних</td>
+          </tr>
+          <tr>
+            <th scope="row">10:25 – 12:00</th>
+            <td colspan="2">Спільна лекція потоку</td>
+            <td>Англійська мова</td>
+            <td>Веб-технології</td>
+            <td>Бази даних</td>
+          </tr>
+          <tr>
+            <th scope="row">12:20 – 13:55</th>
+            <td>Філософія</td>
+            <td rowspan="2">Лабораторна з фізики</td>
+            <td>Бази даних</td>
+            <td>Веб-технології</td>
+            <td>Іноземна мова</td>
+          </tr>
+          <tr>
+            <th scope="row">14:15 – 15:50</th>
+            <td>Вікно</td>
+            <td>Фізичне виховання</td>
+            <td>Семінар</td>
+            <td>Консультація</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="6">Розклад може змінюватися; актуальна версія — на сайті інституту.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h2>Інші таблиці (самостійна робота)</h2>
+      <ul>
+        <li><a href="multiplication.html">Таблиця множення (Піфагора)</a></li>
+        <li><a href="periodic.html">Фрагмент періодичної системи</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Інститут комп'ютерного моделювання. Усі права захищені.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

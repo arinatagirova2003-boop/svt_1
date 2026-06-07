@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Таблиця множення — Інститут комп'ютерного моделювання</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img src="../img/logo.png" alt="Логотип НТУ ХПІ" class="logo" width="60" height="60">
+      <h1>Таблиця множення</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="about.html">Кафедра</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Розклад</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+          <li><a href="https://www.kpi.kharkov.ua/ukr/" target="_blank" rel="noopener">Сайт НТУ «ХПІ»</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Таблиця множення (таблиця Піфагора) 10×10</h2>
+      <p>Перший рядок і перший стовпець оформлені як заголовки тегом <code>&lt;th&gt;</code> з атрибутом <code>scope</code>. Діагональ квадратів виділено кольором.</p>
+
+      <table class="data-table pifagor">
+        <caption>Таблиця множення від 1 до 10</caption>
+        <thead>
+          <tr>
+            <th scope="col">×</th>
+            <th scope="col">1</th>
+            <th scope="col">2</th>
+            <th scope="col">3</th>
+            <th scope="col">4</th>
+            <th scope="col">5</th>
+            <th scope="col">6</th>
+            <th scope="col">7</th>
+            <th scope="col">8</th>
+            <th scope="col">9</th>
+            <th scope="col">10</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>2</td><td class="diag">4</td><td>6</td><td>8</td><td>10</td><td>12</td><td>14</td><td>16</td><td>18</td><td>20</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>3</td><td>6</td><td class="diag">9</td><td>12</td><td>15</td><td>18</td><td>21</td><td>24</td><td>27</td><td>30</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>4</td><td>8</td><td>12</td><td class="diag">16</td><td>20</td><td>24</td><td>28</td><td>32</td><td>36</td><td>40</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>5</td><td>10</td><td>15</td><td>20</td><td class="diag">25</td><td>30</td><td>35</td><td>40</td><td>45</td><td>50</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>6</td><td>12</td><td>18</td><td>24</td><td>30</td><td class="diag">36</td><td>42</td><td>48</td><td>54</td><td>60</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>7</td><td>14</td><td>21</td><td>28</td><td>35</td><td>42</td><td class="diag">49</td><td>56</td><td>63</td><td>70</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>8</td><td>16</td><td>24</td><td>32</td><td>40</td><td>48</td><td>56</td><td class="diag">64</td><td>72</td><td>80</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>9</td><td>18</td><td>27</td><td>36</td><td>45</td><td>54</td><td>63</td><td>72</td><td class="diag">81</td><td>90</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>10</td><td>20</td><td>30</td><td>40</td><td>50</td><td>60</td><td>70</td><td>80</td><td>90</td><td class="diag">100</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Інститут комп'ютерного моделювання. Усі права захищені.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
