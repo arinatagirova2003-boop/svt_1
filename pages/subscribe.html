@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Підписка на розсилку — Інститут комп'ютерного моделювання</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img src="../img/logo.png" alt="Логотип НТУ ХПІ" class="logo" width="60" height="60">
+      <h1>Підписка на розсилку</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="about.html">Кафедра</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Розклад</a></li>
+          <li><a href="register.html">Реєстрація</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+          <li><a href="https://www.kpi.kharkov.ua/ukr/" target="_blank" rel="noopener">Сайт НТУ «ХПІ»</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Будьте в курсі новин інституту</h2>
+      <p>Підпишіться на розсилку, щоб першими отримувати анонси конференцій,
+         оновлення курсів та новини кафедри.</p>
+
+      <form action="/subscribe" method="POST" class="app-form">
+        <fieldset>
+          <legend>Форма підписки</legend>
+
+          <div class="field">
+            <label for="sub-name">Ваше ім'я</label>
+            <input type="text" id="sub-name" name="name" placeholder="Як до вас звертатися">
+          </div>
+
+          <div class="field">
+            <label for="sub-email">Електронна пошта <span class="req-mark">*</span></label>
+            <input type="email" id="sub-email" name="email"
+                   placeholder="you@example.com"
+                   title="Введіть коректну адресу електронної пошти"
+                   required>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Підписатися</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Інститут комп'ютерного моделювання.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація на конференцію — Інститут комп'ютерного моделювання</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img src="../img/logo.png" alt="Логотип НТУ ХПІ" class="logo" width="60" height="60">
+      <h1>Реєстрація на конференцію</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="about.html">Кафедра</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="schedule.html">Розклад</a></li>
+          <li><a href="register.html">Реєстрація</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+          <li><a href="https://www.kpi.kharkov.ua/ukr/" target="_blank" rel="noopener">Сайт НТУ «ХПІ»</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Реєстрація учасника наукової конференції</h2>
+      <p>Заповніть анкету для участі у щорічній конференції молодих науковців.
+         Поля, позначені <span class="req-mark">*</span>, є обов'язковими.</p>
+
+      <form action="/conference-register" method="POST" class="app-form">
+
+        <fieldset>
+          <legend>Контактна інформація</legend>
+
+          <div class="field">
+            <label for="conf-name">Прізвище та ім'я <span class="req-mark">*</span></label>
+            <input type="text" id="conf-name" name="fullname"
+                   placeholder="Тагірова Орина" required>
+          </div>
+
+          <div class="field">
+            <label for="conf-email">Електронна пошта <span class="req-mark">*</span></label>
+            <input type="email" id="conf-email" name="email"
+                   placeholder="you@example.com"
+                   title="Введіть коректну адресу електронної пошти" required>
+          </div>
+
+          <div class="field">
+            <label for="conf-phone">Контактний телефон</label>
+            <input type="tel" id="conf-phone" name="phone"
+                   placeholder="+380XXXXXXXXX"
+                   pattern="(\+380|0)\d{9}"
+                   title="Формат: +380XXXXXXXXX або 0XXXXXXXXX">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Професійні дані</legend>
+
+          <div class="field">
+            <label for="conf-org">Організація / навчальний заклад</label>
+            <input type="text" id="conf-org" name="organization"
+                   placeholder="НТУ «ХПІ»">
+          </div>
+
+          <div class="field">
+            <label for="conf-status">Науковий статус</label>
+            <select id="conf-status" name="status">
+              <option value="student">Студент</option>
+              <option value="postgrad">Аспірант</option>
+              <option value="phd">Кандидат наук</option>
+              <option value="doctor">Доктор наук</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="conf-topic">Тема доповіді <span class="req-mark">*</span></label>
+            <textarea id="conf-topic" name="topic" rows="3"
+                      placeholder="Назва вашої наукової доповіді" required></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Умови участі</legend>
+
+          <fieldset class="inline-group">
+            <legend>Формат участі</legend>
+            <label class="choice"><input type="radio" name="format" value="offline"> Очно</label>
+            <label class="choice"><input type="radio" name="format" value="online"> Онлайн</label>
+          </fieldset>
+
+          <div class="field">
+            <label for="conf-pwd">Пароль для особистого кабінету <span class="req-mark">*</span></label>
+            <input type="password" id="conf-pwd" name="password"
+                   minlength="8" placeholder="Не менше 8 символів" required>
+          </div>
+
+          <div class="field">
+            <label for="conf-pwd2">Підтвердження пароля <span class="req-mark">*</span></label>
+            <input type="password" id="conf-pwd2" name="password_confirm"
+                   minlength="8" placeholder="Повторіть пароль"
+                   data-confirm="conf-pwd" required>
+          </div>
+
+          <div class="field">
+            <label class="choice">
+              <input type="checkbox" name="agree" required>
+              Погоджуюсь з умовами участі та обробкою даних <span class="req-mark">*</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Зареєструватися</button>
+          <button type="reset" class="btn-secondary">Очистити</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Інститут комп'ютерного моделювання.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
